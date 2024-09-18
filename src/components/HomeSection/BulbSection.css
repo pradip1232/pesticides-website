@@ -1,0 +1,106 @@
+.text-warning11 {
+    color: #D58711 !important;
+}
+
+.bulb-images21 {
+    max-width: 100%;
+    height: 40rem;
+    display: block;
+    margin: 0;
+    /* Remove all margins */
+}
+
+.content-bulb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-downsidecard {
+    margin-top: 50px !important;
+    margin-left: 25px !important;
+}
+
+/* Custom card styling */
+.card {
+    border: none;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin: 0;
+    /* Remove extra margin */
+}
+
+/* For better alignment of sections */
+.custom-subhead-1,
+.custom-subhead-2 {
+    margin-bottom: 10px;
+    /* Reduce the margin */
+    padding: 0;
+    /* Remove padding to make it tight */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bulb-images21 {
+        max-width: 70%;
+        margin: 0;
+        /* Ensure no margin */
+    }
+
+    .custom-subhead-1,
+    .custom-subhead-2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .content-bulb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 10px;
+        /* Adjust the margin for better spacing */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-section {
+    padding: 50px 0;
+}
+
+.testimonial-img {
+    height: 250px;
+    object-fit: cover;
+    position: relative; /* Ensure proper positioning of child elements */
+}
+.card-body-images-tst {
+    top: -42px!important;
+}
+.youtube-icon {
+    bottom: -21px!important; /* Adjust to position the icon at the bottom left */
+    left: 10px; /* Adjust to position the icon from the left */
+    color: red; /* Icon color */
+    font-size: 2rem; /* Icon size */
+}
+
+.text-white {
+    color: white;
+}
+
+.position-absolute {
+    position: absolute;
+}

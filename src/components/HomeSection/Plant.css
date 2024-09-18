@@ -1,0 +1,146 @@
+.card-container {
+    position: relative;
+}
+
+
+.visual-heading {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.31px;
+    letter-spacing: 0.06em;
+    color: rgba(139, 204, 0, 1);
+
+}
+
+.hover-overlay h3 {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.6px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+.hover-overlay {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: flex-end;
+    /* Space between heading and paragraph */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 17px;
+    padding: 10px;
+    /* Optional: adds padding around the overlay */
+}
+
+
+.card-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+
+
+.comparison-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #6BA92C;
+}
+
+.view-more-btn {
+    background-color: #6BA92C;
+    border: none;
+    margin-top: 20px;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #28a745;
+    /* Change arrow background color */
+    border-radius: 50%;
+    /* Make the arrows round */
+    height: 30px;
+    width: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    /* Position arrows vertically in the middle */
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -20px;
+    /* Adjust left arrow position */
+}
+
+.carousel-control-next {
+    right: -20px;
+    /* Adjust right arrow position */
+}
+
+.carousel .carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.card-body-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* Optional: Add a semi-transparent background */
+    color: white;
+    /* Change text color to ensure readability on the image */
+}

@@ -1,0 +1,128 @@
+/* Container for video and text */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video Styling */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Text and heading on the video */
+.textandheadingbtn {
+    position: absolute !important;
+    bottom: 70px !important;
+    left: 20px !important;
+    text-align: left !important;
+    color: white !important;
+    z-index: 1;
+    /* Ensure text is on top */
+}
+
+.textandheadingbtn p {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    color: white;
+
+
+}
+
+.providing-hr-line {
+    justify-content: right;
+    max-width: 20%;
+}
+
+.textandheadingbtn h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.4px;
+    letter-spacing: 0.06em;
+    color: white;
+}
+
+.shopbtn {
+    background-color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .textandheadingbtn p {
+        font-size: 24px;
+        line-height: 28.6px;
+    }
+
+    .textandheadingbtn h1 {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .shopbtn {
+        font-size: 16px;
+        padding: 8px 16px;
+        display: block;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .content-home {
+        text-align: center;
+    }
+}
+
+/* ProductCategory.css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card-container:hover .hover-overlay {
+    opacity: 1;
+}

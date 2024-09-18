@@ -1,0 +1,83 @@
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* color: red!important; */
+}
+
+.navbar.scrolled .nav-link {
+  color: #333 !important;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  /* color: #00b5ad; */
+}
+
+
+/* Navbar.css */
+.navbar-custom .navlinks {
+  margin-right: 15px;
+}
+
+.navbar-custom {
+  height: 76px!important;
+  margin-right: -15px;
+  background: linear-gradient(270deg, #FFFFFF 38.1%, rgba(255, 255, 255, 0.265307) 85.05%, rgba(255, 255, 255, 0) 93.74%);
+
+  /* background: linear-gradient(to left, #ff7f50, #ff6347 10%, transparent 100%); */
+  transition: background-color 0.3s ease;
+  max-width: 80%;
+}
+
+/* Style applied when scrolled */
+.navbar-custom.scrolled {
+  background: white !important;
+  /* Apply solid background color when scrolled */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .nav-link {
+  color: black;
+  margin-right: 15px;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.54px;
+  letter-spacing: 0.06em;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #11ff00;
+}
+
+.navbar-custom .cart-button {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .badge {
+
+  position: relative;
+  top: -10px;
+  right: 15px;
+  /* background-color: red; */
+}
+
+.custom-border {
+  border: 1px solid black!important;
+  border-radius: 0px!important;
+  padding: 9px 8px!important;
+  text-decoration: none!important;
+}

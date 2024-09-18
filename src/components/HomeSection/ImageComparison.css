@@ -1,0 +1,41 @@
+.comparison-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .comparison-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-before img,
+  .image-after img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .image-after img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+  }
+  
