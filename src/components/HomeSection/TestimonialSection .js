@@ -11,15 +11,18 @@ import Third from '../../img/farmerr 1.png';
 const testimonials = [
     {
         img: First,
-        name: 'Farmer Name'
+        name: 'Farmer Name',
+        place: 'Place'
     },
     {
         img: Second,
-        name: 'Farmer Name'
+        name: 'Farmer Name',
+        place: 'Place'
     },
     {
         img: Third,
-        name: 'Farmer Name'
+        name: 'Farmer Name',
+        place: 'Place'
     },
 ];
 
@@ -31,15 +34,15 @@ const TestimonialSection = () => {
     return (
         <div className="testimonial-section text-center">
             <Container>
-                <h2 data-aos="fade-up" className="text-success24234"  style={{
-                        fontFamily: 'Arial',
-                        fontSize: '36px',
-                        fontWeight: 400,
-                        lineHeight: '41.31px',
-                        letterSpacing: '0.06em',
-                        color: 'rgba(139, 204, 0, 1)',
-                    }}>TESTIMONIAL</h2>
-                <h3 data-aos="fade-up" className="text-warning">What Our Client Say !</h3>
+                <h2 data-aos="fade-up" className="text-success24234" style={{
+                    fontFamily: 'Arial',
+                    fontSize: '36px',
+                    fontWeight: 400,
+                    lineHeight: '41.31px',
+                    letterSpacing: '0.06em',
+                    color: 'rgba(139, 204, 0, 1)',
+                }}>TESTIMONIAL</h2>
+                <h3 data-aos="fade-up" className="text-warning32" style={{ color: 'rgba(213, 135, 17, 1)', fontSize: '36px', lineHeight: '41.1px', letterSpacing: '6%', fontWeight: '400' }}>What Our Client Say !</h3>
 
                 <Row>
                     {testimonials.map((testimonial, index) => (
@@ -50,12 +53,19 @@ const TestimonialSection = () => {
                                     alt="Testimonial"
                                     className="testimonial-img"
                                 />
-                                <Card.Body className="position-relative card-body-images-tst">
-                                    <div className="text-white position-absolute bottom-0 start-0 p-2">
-                                        <h5>{testimonial.name}</h5>
-                                    </div>
-                                    <div className="youtube-icon position-absolute bottom-0 start-0 p-2">
-                                        <YouTubeIcon />
+                                <Card.Body className="position-relative " >
+
+                                    <div className='card-body-images-tst position-relative'  style={{
+                                    background: 'linear-gradient(0.64deg, #010101 2.45%, rgba(0, 0, 0, 0) 102.39%)'
+                                }}>
+
+                                        <div className="text-white position-absolute bottom-0 start-0 p-2 m-0">
+                                            <h5 className='m-0'>{testimonial.name}</h5>
+                                            <h6 className='p-0 text-left justify-content-left'>{testimonial.place}</h6>
+                                        </div>
+                                        <div className="youtube-icon position-absolute bottom-0 start-0 p-2">
+                                            <YouTubeIcon />
+                                        </div>
                                     </div>
                                 </Card.Body>
                             </Card>

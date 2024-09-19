@@ -14,6 +14,8 @@ import Four6Image from '../../img/product-cate/NCFB_MarkStebnicki_LettuceField_f
 import Four7Image from '../../img/product-cate/biocontrol 1.png'; // Correct import
 import Four8Image from '../../img/product-cate/Soil_Conditioner_vs_Compost-min 1.png'; // Correct import
 
+
+// product images 
 const ProductCategory = () => {
     const isMobile = useMediaQuery('(max-width:600px)');
     const [isLoading, setIsLoading] = useState(true); // Loading state
@@ -68,7 +70,7 @@ const ProductCategory = () => {
                                     <Card.Title
                                         style={{
                                             fontFamily: 'Arial',
-                                            fontSize: isMobile ? '14px' : '18px',
+                                            fontSize: isMobile ? '14px' : '24px',
                                             fontWeight: '400',
                                             lineHeight: '27.6px',
                                             letterSpacing: '0.06em',

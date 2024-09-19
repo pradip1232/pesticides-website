@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeSection.css';  // Assuming the CSS is saved here
-import firstVideo from '../../img/first-video.mp4'; // Update the path to your video file
+import firstVideo from '../../img/22.mp4'; // Update the path to your video file
 import { useSpring, animated } from '@react-spring/web';
 
 const HomeSection = () => {
@@ -39,8 +39,8 @@ const HomeSection = () => {
           </animated.div>
           <hr className="providing-hr-line" style={{ width: "40%", marginRight: "0" }} />
           <animated.div style={secondHeadingAnimation}>
-            <div style={{ background: 'rgba(213, 135, 17, 0.2)', marginLeft: '-36px', height: '100px', padding: '10px', width: '88%' }}>
-              <h1 style={{ marginLeft: '25px' }} className="mt-3 ORGANICheading">
+            <div style={{ background: 'rgba(213, 135, 17, 0.2)', marginLeft: '-43px', height: '80px', padding: '5px', width: '88%' }}>
+              <h1 style={{ marginLeft: '38px' }} className="mt-3 ORGANICheading">
                 Discover essential products for thriving farms
               </h1>
             </div>

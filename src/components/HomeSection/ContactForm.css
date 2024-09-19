@@ -10,6 +10,106 @@ Form Label {
     text-align: right;
 }
 
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #333;
+    padding: 40px 0;
+}
+
+.contact-form-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.txt-content {
+    color: #ffffff;
+    /* White text color */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    /* Prevent label text from wrapping to next line */
+    text-overflow: ellipsis;
+    /* Add ellipsis if text is too long */
+    overflow: hidden;
+}
+
+.contact-form-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-section .form-control {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-form-section .MuiFilledInput-root {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.contact-form-section .MuiInputBase-root textarea {
+    padding: 10px;
+    /* Adjust padding for text area */
+}
+
+.contact-form-section .MuiFormControl-root {
+    width: 100%;
+}
+
+/* Flex container for labels and input fields */
+.contact-form-section .form-group .row {
+    align-items: center;
+}
+
+.contact-form-section .form-group .col-md-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-form-section .form-group .col-md-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Styles for the button */
+.contact-form-section .btn-success {
+    background-color: #8bcc00;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.contact-form-section .btn-success:hover {
+    background-color: #75a600;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .contact-form-section .form-group .col-md-2 {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .contact-form-section .txt-content {
+        text-align: left;
+    }
+}
+
+
 .txt-content {
     text-align: right;
     float: right;

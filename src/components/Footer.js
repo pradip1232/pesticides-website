@@ -8,8 +8,14 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { Facebook, Twitter, YouTube, WhatsApp, Instagram, Google } from '@mui/icons-material';
 import './Footer.css'; // Custom styling
-import Logo from './../img/logo.png';
+import Logo from './../img/SUnfield agro footer logo.png';
 
+
+import fb from './../img/icon/Facebook.png';
+import insta from './../img/icon/Instagram.png';
+import tt from './../img/icon/Twitter.png';
+import gg from './../img/icon/Google.png';
+import wt from './../img/icon/WhatsApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
@@ -41,7 +47,7 @@ const Footer = () => {
           </Col>
 
           {/* Column 2: Policy Links */}
-          <Col md={3} data-aos="fade-up" className="text-left mr-4">
+          <Col md={3} data-aos="fade-up" className="text-left mt-5 mr-4">
             <h5>Our Policy</h5>
             <ul className="list-unstyled">
               <li>Return Policy</li>
@@ -54,7 +60,7 @@ const Footer = () => {
           </Col>
 
           {/* Column 3: Quick Links and Social Icons */}
-          <Col md={3} data-aos="fade-up" className="text-left ">
+          <Col md={3} data-aos="fade-up" className="text-left mt-5 ">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>About Us</li>
@@ -64,15 +70,19 @@ const Footer = () => {
             </ul>
 
             <div className="social-icons">
-              <Facebook style={{ color: '#3b5998', fontSize: '2rem', margin: '0 10px' }} />
-              <Twitter style={{ color: '#1DA1F2', fontSize: '2rem', margin: '0 10px' }} />
-              <YouTube style={{ color: '#FF0000', fontSize: '2rem', margin: '0 10px' }} />
-              <WhatsApp style={{ color: '#25D366', fontSize: '2rem', margin: '0 10px' }} />
-              <Instagram style={{ color: '#E1306C', fontSize: '2rem', margin: '0 10px' }} />
+              <img src={fb} style={{ color: '#3b5998', fontSize: '2rem', margin: '0px 14px 0 0' }} />
+              <img src={insta} style={{ color: '#1DA1F2', fontSize: '2rem', margin: '0px 14px 0 0' }} />
+              {/* <img src={wt} style={{ color: '#FF0000', fontSize: '2rem', margin: '0px 14px 0 0' }} /> */}
+              <img src={gg} style={{ color: '#25D366', fontSize: '2rem', margin: '0px 14px 0 0' }} />
+              <img src={tt} style={{ color: '#E1306C', fontSize: '2rem', margin: '0px 14px 0 0' }} />
             </div>
           </Col>
         </Row>
-        <p className='text-center'>         Lorem Ipsum is simply dummy text of the printing and typesetting industry.        </p>
+        <p className='text-center' style={{ marginBottom: '-20px' }}>
+          Made with love in India, powered by <a className='website-url' href='https://squibfactory.com/'>
+            Squibfactory
+          </a>
+        </p>
       </Container>
     </footer>
   );

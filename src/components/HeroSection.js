@@ -18,13 +18,21 @@ import ContactFormSection from './HomeSection/ContactFormSection';
 import Footer from './Footer';
 import ImageComparisonSlider from './HomeSection/ImageComparisonSlider';
 import ImageComparison from './HomeSection/ImageComparison';
+import WhatsAppButton from './HomeSection/WhatsAppButton';
 
 const HeroSection = () => {
   return (<>
 
+
+
+
+
+    <WhatsAppButton />
+
+
     <HomeSection />
 
-    <ProductCategory /> 
+    <ProductCategory />
     <PlantGrowth />
 
     {/* <ComparisonSection /> */}

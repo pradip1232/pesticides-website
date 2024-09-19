@@ -3,13 +3,13 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import './Navbar.css';
 import logo from '../img/logo.png';
-
+import user from './../img/User.png';
 function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation(); // Hook to get the current location
 
   // Array of paths where the background and shadow should be applied
-  const pagesWithBackground = ["/about", "/products", "/gallery", "/contact","login"];
+  const pagesWithBackground = ["/about", "/products", "/gallery", "/contact", "login"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +38,7 @@ function Navigation() {
     >
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="Logo" width={100} />
+          <img src={logo} alt="Logo" width={148} className="logo-image" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="navbar-custom">
@@ -50,6 +50,7 @@ function Navigation() {
             <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
 
             {/* Add Login, Signup, and Cart */}
+            <img src={user}  className="user-image"/>
             <Nav.Link as={Link} to="/login" className="nav-link custom-border">Login</Nav.Link>
             <Nav.Link as={Link} to="/signup" className="nav-link custom-border">Signup</Nav.Link>
 

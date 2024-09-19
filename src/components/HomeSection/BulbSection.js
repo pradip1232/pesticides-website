@@ -9,7 +9,7 @@ const BulbSection = () => {
         <section className="bulb-section">
             <Container className="bg-white text-center mt-5 ">
                 <h2
-                    className="text-success32 mb-5"
+                    className="text-success32"
                     style={{
                         fontFamily: 'Arial',
                         fontSize: '36px',
@@ -28,16 +28,16 @@ const BulbSection = () => {
                 <Row className="content-bulb align-items-center">
                     {/* Left Side - Two Cards */}
                     <Col lg={3} className="custom-subhead-1">
-                        <Card className="mb-4">
+                        <Card className="">
                             <Card.Body>
-                                <h4 className="text-warning11">High Nutrition Value</h4>
-                                <p>Organic foods preserve far more natural vitamins and minerals.</p>
+                                <h4 className="text-warning11">Wide Range of Organic Agricultural Products</h4>
+                                <p>We provide a variety of products, including organic fertilizers, soil conditioners, plant growth promoters, bio-pesticides, and bio-fungicides, tailored for sustainable farming.</p>
                             </Card.Body>
                         </Card>
                         <Card className="mb-5 pt-4 right-downsidecard ">
                             <Card.Body>
-                                <h4 className="text-warning11">Certified Organic Sources</h4>
-                                <p>Our products are strictly quality controlled and independently verified.</p>
+                                <h4 className="text-warning11">Sustainable and Cost-Effective Solutions</h4>
+                                <p>Our eco-friendly products offer cost-effective solutions that reduce the use of harmful chemicals, support healthier ecosystems, and lower chemical residues in food.</p>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -55,8 +55,8 @@ const BulbSection = () => {
                     <Col lg={3} className="custom-subhead-2">
                         <Card className="mb-4">
                             <Card.Body>
-                                <h4 className="text-warning11">Preserves the Environment</h4>
-                                <p>Sustainable farming ensures soil conversation & reduced air pollution.</p>
+                                <h4 className="text-warning11">Enhancing Plant Health and Crop Yield</h4>
+                                <p>Our products improve plant health, boost soil fertility, and control pests naturally, resulting in higher crop yields and reduced pesticide use.</p>
                             </Card.Body>
                         </Card>
                     </Col>

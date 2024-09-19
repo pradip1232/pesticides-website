@@ -3,6 +3,24 @@
 }
 
 
+.container-carousal .card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.4px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding-right: 10px;
+
+}
+
+.container-carousal .card {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset !important;
+
+}
+
 .visual-heading {
     font-family: Arial;
     font-size: 36px;
@@ -92,9 +110,21 @@
     width: 5%;
 }
 
+.carousel-control-prev-icon {
+    background-image: url('../../img/Arrow.png');
+
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../img/Arrow.png');
+    transform: rotate(180deg);
+
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #28a745;
+    /* background-image: url('../../img/Arrow.png'); */
+    /* background-color: #28a745; */
     /* Change arrow background color */
     border-radius: 50%;
     /* Make the arrows round */
@@ -126,6 +156,7 @@
 .card-img {
     width: 100%;
     height: auto;
+    padding: 7px;
 }
 
 .position-relative {
@@ -137,6 +168,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    background: linear-gradient(0.64deg, #010101 -2.45%, rgba(0, 0, 0, 0) 102.39%);
+
     justify-content: space-between;
     padding: 20px;
     /* background: rgba(0, 0, 0, 0.5); */

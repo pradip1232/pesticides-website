@@ -1,13 +1,9 @@
 .core-values-section {
     background-color: #f9f9f9;
-    background-image: url('../../img/farm\ img\ 1.png');
+    background-image: url('../../img/Group\ 329.png');
     position: relative;
     height: 538px;
     /* Adjust height if needed */
-}
-
-.core-values-section {
-    position: relative;
 }
 
 .row-1,
@@ -18,26 +14,36 @@
 }
 
 .circle {
-    background: rgba(240, 240, 240, 1);
-
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
-    background-color: #83b745;
-    color: white;
-    border-radius: 50%;
-    font-size: 24px;
-    transition: transform 1s ease, opacity 1s ease;
-    opacity: 0;
-    /* Initially hidden */
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 2rem;
+    color: #83b745;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.circle img {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 5px;
+    margin-top: 63px;
 }
 
 .circle h5 {
-    margin-top: 10px;
+    margin-top: 17px;
     font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 /* Slide-in animations */
@@ -64,7 +70,6 @@
     transform: translateX(200%);
 }
 
-
 .central-image {
     text-align: center;
     position: relative;
@@ -73,94 +78,74 @@
 
 .central-image img {
     max-width: 100%;
-    /* Adjust size as per your design */
     margin-bottom: 20px;
     margin-top: 78px;
 }
 
-/* General circle styles */
-/* General circle styles */
-.circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 3px solid #83b745;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    font-size: 2rem;
-    color: #83b745;
-    flex-direction: column;
-    transition: all 0.3s ease;
-    /* Optional for smooth transitions */
+.yellow-color {
+    border: 3px solid rgba(213, 135, 17, 1);
 }
 
-.circle i{
+.green-color {
+    border: 3px solid #83b745;
+}
+
+.circle i {
     color: black;
 }
-.circle h5 {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    font-weight: bold;
-}
 
-/* Central image */
+/* Central image styles */
 .central-image {
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-/* .central-image img {
-    max-width: 300px;
-    margin-bottom: 20px;
-} */
-
-
+/* Heading for core values section */
 .core-values-section h2 {
     margin-top: -42px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #83b745;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Left diagonal circles */
 .circle-1 {
-    top: 22%;
+    top: 25%;
     left: 35%;
     transform: translate(-50%, -50%);
 }
 
 .circle-2 {
-    top: 50%;
-    left: 25%;
+    top: 51%;
+    left: 26%;
     transform: translate(-50%, -50%);
 }
 
 .circle-3 {
-    top: 85%;
-    left: 21%;
+    top: 82%;
+    left: 23%;
     transform: translate(-50%, -50%);
 }
 
 /* Right diagonal circles */
 .circle-4 {
-    top: 22%;
+    top: 25%;
     right: 36%;
     transform: translate(50%, -50%);
 }
 
 .circle-5 {
-    top: 50%;
-    right: 25%;
+    top: 51%;
+    right: 26%;
     transform: translate(50%, -50%);
 }
 
 .circle-6 {
-    top: 85%;
-    right: 21%;
+    top: 82%;
+    right: 23%;
     transform: translate(50%, -50%);
 }
 
@@ -168,7 +153,6 @@
 @media (max-width: 768px) {
     .core-values-section {
         height: auto;
-        /* Allow the section to adjust height based on content */
     }
 
     .circle {
@@ -176,38 +160,26 @@
         height: 80px;
         font-size: 1.5rem;
         position: static;
-        /* Disable absolute positioning on mobile */
         margin: 10px auto;
-        /* Center circles with margin */
     }
 
     .circle h5 {
         font-size: 12px;
     }
 
-    /* Arrange circles in two rows below the central image */
-    .row-1 {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
-        margin-left: 46px;
-        margin-right: -29px;
-    }
-
+    .row-1,
     .row-2 {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 20px;
     }
 
     .central-image img {
         margin-bottom: 30px;
-        /* Ensure there's space between the image and the circles */
     }
 }
 
 /* Optional: smoother transitions for hover effect */
 .circle:hover {
-    /* transform: scale(1.1); Hover zoom effect */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional shadow effect */
 }

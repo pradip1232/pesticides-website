@@ -6,6 +6,15 @@
     overflow: hidden;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 /* Video Styling */
 .bg-video {
     position: absolute;
@@ -21,8 +30,8 @@
 /* Text and heading on the video */
 .textandheadingbtn {
     position: absolute !important;
-    bottom: 70px !important;
-    left: 20px !important;
+    bottom: 30px !important;
+    left: 29px !important;
     text-align: left !important;
     color: white !important;
     z-index: 1;
@@ -31,7 +40,7 @@
 
 .textandheadingbtn p {
     font-family: Arial, sans-serif;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: 0.06em;
@@ -49,7 +58,7 @@
 
 .textandheadingbtn h1 {
     font-family: Arial, sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 41.4px;
     letter-spacing: 0.06em;
