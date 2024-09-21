@@ -46,7 +46,7 @@ const SunfieldAgro = () => {
                 }}
             >
                 <Container>
-                    <h2 className="text-center mb-4" style={{ color: '#83b745' }}>SUNFIELD AGRO</h2>
+                    <h2 className="text-center mb-4" style={{ color: '#83b745' , fontSize:'36px' }}>SUNFIELD AGRO</h2>
                 </Container>
                 <div style={{ backgroundColor: 'rgba(139, 204, 0, 0.19)', padding: '20px 0' }}>
 

@@ -16,6 +16,7 @@
 .navbar.scrolled .logo-image {
   padding-left: 25px;
   width: 97px;
+  height: 65px;
 }
 
 .navbar.scrolled .nav-link {
@@ -58,7 +59,9 @@
 }
 
 .user-image {
-  padding: 4px 8px;
+  /* padding: 4px 8px; */
+  height: 32px;
+  width: 32px;
 }
 
 .navbar-custom .nav-link {
@@ -67,10 +70,10 @@
   font-family: Arial;
   font-size: 24px;
   font-weight: 400;
-/* text-transform: uppercase; */
+  /* text-transform: uppercase; */
   line-height: 27.54px;
   letter-spacing: 0.06em;
-  padding: 4px 8px !important;
+  padding: 2px 5px !important;
 
 }
 
@@ -95,4 +98,7 @@
   border: 1px solid black !important;
   border-radius: 0px !important;
   text-decoration: none !important;
+  height: 33px;
+  width: 96px;
+  text-align: center;
 }

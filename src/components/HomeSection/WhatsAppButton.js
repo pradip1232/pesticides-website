@@ -7,7 +7,7 @@ import { useTheme } from '@mui/material/styles';
 const WhatsAppButton = () => {
     // Handle button click to open WhatsApp
     const handleWhatsAppClick = () => {
-        const phoneNumber = '+919667799620'; // Replace with your phone number
+        const phoneNumber = '+91966779885520'; // Replace with your phone number
         const message = 'Hello, I would like to know more about your products.'; // Customize the default message
 
         // Open WhatsApp link in a new tab
@@ -35,7 +35,7 @@ const styles = {
         zIndex: 1000, // Ensure the button is on top
     },
     button: {
-        backgroundColor: '#25D366', // WhatsApp green color
+        // backgroundColor: '#25D366', // WhatsApp green color
         borderRadius: '50%', // Circular shape
         width: '60px',
         height: '60px',
@@ -43,10 +43,10 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        color: 'white',
+        color: 'green',
     },
     icon: {
-        fontSize: '30px',
+        fontSize: '70px',
     },
 };
 
